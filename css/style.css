@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Righteous&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: url("../Images/bg.jpg");
+    background-size: cover;
+
+}
+
+form {
+    width: max-content;
+    height: max-content;
+    max-width: 640px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+form table {
+    height: 300px;
+    width: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+form .container {
+    margin-bottom: 10px;
+}
+
+form .container .inputWrapper {
+    display: grid;
+    grid-template-columns: auto 150px;
+    width: 100%;
+    grid-gap: 10px;
+}
+form .container .inputWrapper  input {
+    height: 40px;
+}
+form .container button {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+form table #taskList {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 600px;
+    overflow: scroll;
+}
+form table thead tr {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    text-align: center;
+}
+form table #taskList tr  {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    padding: 5px;
+    text-align: center;
+}
+form table #taskList  tr td {
+    width: 150px;
+}
+
+.done {
+    text-decoration: line-through;
+}
